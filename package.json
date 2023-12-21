@@ -1,0 +1,17 @@
+{
+  "name": "tricky-liff",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@line/liff": "2.23.0",
+    "material-symbols": "^0.14.3"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "vite": "5.0.10"
+  }
+}

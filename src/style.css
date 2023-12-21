@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  text-align: center;
+  overflow-x: hidden;
+  padding-bottom: 200px;
+}
+#content {
+  padding: 16px;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 48x;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+h1 {
+  margin-bottom: 16px;
+}
+
+/* sticky header */
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 20px;
+}
+li.logo a {
+  color: black;
+}
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+nav a {
+  height: 60px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  padding: 20px 20px 16px 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+}
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+nav .icon {
+  height: 28px;
+}
+
+/* table */
+table {
+  width: 360px;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  background: #ccc;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  max-width: 200px;
+}
+tr:nth-child(even) {
+  background: #efefef;
+}
+
+/* playground page */
+.box {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  padding: 36px 16px;
+  justify-content: space-between;
+  border-bottom: 0.4px solid #ccc;
+}
+label {
+  display: block;
+  font-weight: bold;
+}
+label + input,
+label + button,
+input + button {
+  margin-top: 8px;
+}
+button.run {
+  padding: 12px;
+  color: #fff;
+  background-color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-left: auto;
+  width: 100%;
+}
+input#message {
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+  padding-left: 16px;
+}
